@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 
 if __name__ == "__main__":
-    path = u'..\\算法讲师\\机器学习升级版\\数据\\4.1Advertising.csv'
+    path = u'D:\\python_space\\ML\\4.1Advertising.csv'
     # Python自带库
     # f = file(path, 'rb')
     # print f
@@ -24,10 +24,10 @@ if __name__ == "__main__":
     # print p
 
     # pandas读入
-    data = pd.read_csv(path)    # TV、Radio、Newspaper、Sales
-    x = data[['TV', 'Radio', 'Newspaper']]
-    # x = data[['TV', 'Radio']]
-    y = data['Sales']
+    # data = pd.read_csv(path)    # TV、Radio、Newspaper、Sales
+    # x = data[['TV', 'Radio', 'Newspaper']]
+    # # x = data[['TV', 'Radio']]
+    # y = data['Sales']
 
     # 绘制1
     # plt.plot(data['TV'], y, 'ro', label='TV')
