@@ -39,5 +39,12 @@ data = cursor.fetchone()
 
 print("Database version : %s " % data)
 
-# 关闭数据库连接
-db.close()
+
+def query(Sql):
+    cursor.execute(Sql)
+    return cursor.fetchone()
+
+
+def insert(Sql):
+    cursor.execute(Sql)
+    db.commit()
